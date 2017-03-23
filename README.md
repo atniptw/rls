@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/rust-lang-nursery/rls.svg?branch=master)](https://travis-ci.org/rust-lang-nursery/rls) [![Build status](https://ci.appveyor.com/api/projects/status/cxfejvsqnnc1oygs?svg=true)](https://ci.appveyor.com/project/rust-lang-nursery/rls-x6grn)
+[![Build Status](https://travis-ci.org/rust-lang-nursery/rls.svg?branch=master)](https://travis-ci.org/rust-lang-nursery/rls) [![Build status](https://ci.appveyor.com/api/projects/status/cxfejvsqnnc1oygs?svg=true)](https://ci.appveyor.com/project/jonathandturner/rls-x6grn)
 
 
 
@@ -25,7 +25,7 @@ better experience for larger and larger crates.
 
 The RLS is designed to be frontend-independent. We hope it will be widely
 adopted by different editors and IDEs. To seed development, we provide a
-[reference implementation of an RLS frontend](https://github.com/rust-lang-nursery/rls_vscode)
+[reference implementation of an RLS frontend](https://github.com/jonathandturner/rls_vscode)
 for [Visual Studio Code](https://code.visualstudio.com/).
 
 
@@ -102,13 +102,16 @@ the future.
 rustup component add rust-analysis
 ```
 
+If you've never set up Racer before, you may also need follow the [Racer configuration
+steps](https://github.com/phildawes/racer#configuration)
+
 _**Note:** in the future, we hope to move these setup steps to `rustup`, so that
 you only have one step to add IDE support._
 
 ## Running
 
 Though the RLS is built to work with many IDEs and editors, we currently use
-VSCode to test the RLS.
+VSCode to test the RLS (you can run the RLS manually with the `cargo run` command).
 
 To run with VSCode, you'll need a 
 [recent VSCode version](https://code.visualstudio.com/download) installed.
@@ -162,5 +165,5 @@ Currently we accept the following options:
 
 ## Contributing
 
-You can look in the [contributing.md](https://github.com/rust-lang-nursery/rls/blob/master/contributing.md) in this repo to learn more about
-contributing to this project.
+You can look in the [contributing.md](https://github.com/rust-lang-nursery/rls/blob/master/contributing.md)
+in this repo to learn more about contributing to this project.
